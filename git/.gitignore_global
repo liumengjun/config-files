@@ -1,0 +1,26 @@
+# sys
+*~
+.DS_Store
+Thumbs.db
+nohup.out
+.#*
+._*
+
+# atom-ctags files
+.tags
+.tags1
+
+# visual studio code project info
+.vscode
+
+# notebook and pythons
+.ipynb_checkpoints
+__pycache__/
+*.pyc
+
+# sass
+.sass-cache/
+
+# npm/node
+package-lock.json
+

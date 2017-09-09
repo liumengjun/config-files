@@ -1,0 +1,36 @@
+[alias]
+	st = status
+	last = log -1 HEAD --stat
+	logs = log --color --graph --decorate --oneline
+	loga = log --color --graph --decorate --oneline --all
+	recent = log --color --graph --decorate --oneline -12
+	recentv = log --color --graph --decorate --oneline -12 --all
+	co = checkout --
+	br = branch
+	ci = commit
+	unstage = reset HEAD --
+	changes = log --name-status
+	cd = checkout
+	desc = describe
+	tags = tag -l
+	tagsref = show-ref --tags --abbrev -d
+[user]
+	email = mengjun_liu@126.com
+	name = Mengjun Liu
+[ui]
+	color = true
+[core]
+    editor = vi
+	autocrlf = input
+	whitespace = cr-at-eol
+	excludesfile = /Users/mengjunliu/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[merge]
+	tool = vimdiff
+[commit]
+	template = /Users/mengjunliu/.stCommitMsg
