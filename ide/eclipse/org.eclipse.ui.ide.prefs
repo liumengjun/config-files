@@ -1,0 +1,7 @@
+MAX_RECENT_WORKSPACES=12
+RECENT_WORKSPACES=/Volumes/Idle/javaIDE/work/myworkspace\n/Volumes/Keep/works-eclipse\n/Volumes/Idle/javaIDE/work/jee_workspace\n/Users/liumengjun/workspace/eclipse_works\n/Volumes/Idle/ccpp/workspace\n/Volumes/Idle/AndroidDevEnvSoft/workspace
+RECENT_WORKSPACES_PROTOCOL=3
+SHOW_RECENT_WORKSPACES=true
+SHOW_WORKSPACE_SELECTION_DIALOG=false
+WARN_ABOUT_WORKSPACE_INCOMPATIBILITY=false
+eclipse.preferences.version=1
