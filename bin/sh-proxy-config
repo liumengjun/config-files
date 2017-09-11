@@ -1,0 +1,7 @@
+#!/bin/bash
+# use cmd `source` this file
+
+# polipo proxy  127.0.0.1:8123
+export http_proxy=127.0.0.1:8123
+export https_proxy=$http_proxy
+

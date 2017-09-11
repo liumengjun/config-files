@@ -1,0 +1,2 @@
+#!/bin/bash
+lighttpd -f /usr/local/etc/lighttpd/lighttpd.conf

@@ -1,0 +1,2 @@
+#!/bin/sh
+~/workspace/libs_tools/jadx/build/jadx/bin/jadx-gui "$@"
