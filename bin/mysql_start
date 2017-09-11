@@ -1,3 +1,2 @@
 #!/bin/bash
-# mysql_server is alias of ${MYSQL_HOME}/support-files/mysql.server
-mysql_server start
+${MYSQL_HOME}/support-files/mysql.server start
