@@ -1,0 +1,6 @@
+#!/bin/bash
+# use cmd `source` this file
+
+unset http_proxy
+unset https_proxy
+

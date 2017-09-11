@@ -1,0 +1,2 @@
+#!/bin/sh
+java -jar ~/bin/in-lib/apktool_2.0.2.jar "$@"

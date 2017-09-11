@@ -1,0 +1,4 @@
+#!/bin/sh
+# https://rtyley.github.io/bfg-repo-cleaner/
+# https://central.sonatype.com/artifact/com.madgag/bfg
+java -jar ~/bin/in-lib/bfg-1.12.14.jar "$@"
