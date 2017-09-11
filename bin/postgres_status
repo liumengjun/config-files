@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "lmj" | sudo -S -u postgres pg_ctl -D $PGDATA status
+exit
