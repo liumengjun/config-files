@@ -1,2 +1,2 @@
 #!/bin/bash
-${MYSQL_HOME}/support-files/mysql.server start
+sudo ${MYSQL_HOME}/support-files/mysql.server start
