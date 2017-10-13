@@ -1,3 +1,8 @@
+if [ $ITERM_SESSION_ID ]; then
+  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+fi
+
+
 # export PS1="\[\e[0;32m\][\t]\[\e[0;31m\]\u@\h\[\e[0;36m\]:\[\e[0;34m\]\W\[\e[0;37m\]$ \[\e[m\]"
 export PS1="\[\e[0;31m\]\u@\h\[\e[0;36m\]:\[\e[0;34m\]\W\[\e[0;37m\]$ \[\e[m\]"
 # export LC_TYPE="en_US.UTF-8"
