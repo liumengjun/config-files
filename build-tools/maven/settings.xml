@@ -337,6 +337,12 @@ under the License.
                 <snapshots><enabled>true</enabled></snapshots>
             </repository>
             <repository>
+                <id>advance</id>
+                <url>http://advance</url>
+                <releases><enabled>true</enabled><updatePolicy>always</updatePolicy></releases>
+                <snapshots><enabled>true</enabled></snapshots>
+            </repository>
+            <repository>
                 <id>spring-release</id>
                 <name>Spring Maven Release Repository</name>
                 <url>http://repo.springsource.org/libs-release</url>
@@ -349,6 +355,12 @@ under the License.
             <pluginRepository>
                 <id>central</id>
                 <url>http://central</url>
+                <releases><enabled>true</enabled><updatePolicy>always</updatePolicy></releases>
+                <snapshots><enabled>true</enabled></snapshots>
+            </pluginRepository>
+            <pluginRepository>
+                <id>advance</id>
+                <url>http://advance</url>
                 <releases><enabled>true</enabled><updatePolicy>always</updatePolicy></releases>
                 <snapshots><enabled>true</enabled></snapshots>
             </pluginRepository>
