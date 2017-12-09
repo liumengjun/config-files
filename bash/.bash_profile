@@ -3,6 +3,10 @@ if [ "${BASH-no}" != "no" ]; then
 fi
 
 source ~/.git-completion.bash
+# bash-completion
+if [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then
+    . /usr/local/etc/profile.d/bash_completion.sh
+fi
 
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home"
 PATH="$JAVA_HOME/bin:$PATH"
@@ -22,7 +26,7 @@ export NPM_HOME="$NODE_HOME/libexec/npm"
 
 export ANDROID_HOME="/Library/Android/sdk"
 export ANDROID_NDK_HOME="/Library/Android/sdk/ndk-bundle"
-PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/25.0.3:$PATH"
+PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/25.0.3:$PATH"
 PATH="$ANDROID_NDK_HOME:$PATH"
 
 #default GRADLE_USER_HOME="$HOME/.gradle"
@@ -42,6 +46,7 @@ export GOPATH="$HOME/.go"
 export GOBIN="$HOME/.go/bin"
 # this is bad #export GOROOT="$(brew --prefix golang)/libexec"
 export GOROOT="/usr/local/opt/go/libexec"
+export GOROOT_BOOTSTRAP=$GOROOT
 PATH="$PATH:$GOROOT/bin:$GOBIN"
 
 PATH="$PATH:$HOME/.cargo/bin"
