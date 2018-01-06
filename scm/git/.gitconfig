@@ -16,7 +16,7 @@
 	tagsref = show-ref --tags --abbrev -d
 [user]
 	email = mengjun_liu@126.com
-	name = Mengjun Liu
+	name = Liu Mengjun
 [ui]
 	color = true
 [core]
