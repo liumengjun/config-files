@@ -35,11 +35,7 @@
   </codeStyleSettings>
   <codeStyleSettings language="Groovy">
     <option name="BLANK_LINES_AROUND_CLASS" value="2" />
-    <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
     <option name="WRAP_LONG_LINES" value="true" />
-    <indentOptions>
-      <option name="CONTINUATION_INDENT_SIZE" value="4" />
-    </indentOptions>
   </codeStyleSettings>
   <codeStyleSettings language="HTML">
     <indentOptions>
@@ -52,12 +48,8 @@
     <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
     <option name="KEEP_CONTROL_STATEMENT_IN_ONE_LINE" value="false" />
     <option name="BLANK_LINES_AROUND_CLASS" value="2" />
-    <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
     <option name="BINARY_OPERATION_SIGN_ON_NEXT_LINE" value="true" />
     <option name="WRAP_LONG_LINES" value="true" />
-    <indentOptions>
-      <option name="CONTINUATION_INDENT_SIZE" value="4" />
-    </indentOptions>
   </codeStyleSettings>
   <codeStyleSettings language="JSON">
     <indentOptions>
