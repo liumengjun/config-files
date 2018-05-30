@@ -8,6 +8,8 @@ if [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then
     . /usr/local/etc/profile.d/bash_completion.sh
 fi
 
+export X11_PATH=/opt/X11
+
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home"
 PATH="$JAVA_HOME/bin:$PATH"
 export GROOVY_HOME="/usr/local/opt/groovy/libexec"
@@ -16,7 +18,9 @@ PATH="$GROOVY_HOME/bin:$PATH"
 # export DERBY_HOME="$JAVA_HOME/db"
 # PATH="$DERBY_HOME/bin:$PATH"
 
+export M2_HOME="/usr/local/opt/maven/libexec"
 export ANT_HOME="/usr/local/opt/ant/libexec"
+export PATH=$PATH:$M2_HOME/bin:$ANT_HOME/bin
 
 export JMETER_HOME="/usr/local/opt/jmeter/libexec"
 export PATH="$JMETER_HOME/bin:$PATH"
