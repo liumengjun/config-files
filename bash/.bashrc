@@ -11,6 +11,8 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export LESSCHARSET=utf-8
 
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # polipo proxy  127.0.0.1:8123
 #export http_proxy=54.250.245.82:13128
 #export https_proxy=$http_proxy
