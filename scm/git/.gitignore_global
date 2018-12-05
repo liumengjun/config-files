@@ -12,6 +12,7 @@ nohup.out
 
 # visual studio code project info
 .vscode
+.factorypath
 
 # notebook and pythons
 .ipynb_checkpoints
