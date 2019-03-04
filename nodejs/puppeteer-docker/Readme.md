@@ -8,6 +8,8 @@
 docker build -t node-puppeteer:puppeteer1_11-node10-alpine .
 ```
 
+> [get the image](https://hub.docker.com/r/zhonglijunyi/node-puppeteer)
+
 ## Run example
 
 ```sh

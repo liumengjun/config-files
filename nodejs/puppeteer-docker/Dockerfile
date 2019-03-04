@@ -4,8 +4,8 @@ FROM node:10.15.2-alpine
 
 # Installs latest Chromium (72) package.
 RUN apk update && apk upgrade && \
-    echo @v3.9 http://nl.alpinelinux.org/alpine/v3.9/community >> /etc/apk/repositories && \
-    echo @v3.9 http://nl.alpinelinux.org/alpine/v3.9/main >> /etc/apk/repositories && \
+    echo @v3.9 http://dl-cdn.alpinelinux.org/alpine/v3.9/community >> /etc/apk/repositories && \
+    echo @v3.9 http://dl-cdn.alpinelinux.org/alpine/v3.9/main >> /etc/apk/repositories && \
     # apk add --no-cache \
     apk add chromium@v3.9 \
       harfbuzz@v3.9 \
