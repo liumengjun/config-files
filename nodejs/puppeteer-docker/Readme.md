@@ -14,6 +14,7 @@ docker build -t node-puppeteer:puppeteer1_11-node10-alpine .
 
 ```sh
 docker run -it --rm node-puppeteer:puppeteer1_11-node10-alpine sh
+# you may use `--volume list` option
 
 cd /tmp
 vi example.js # and input content, see 'example.js' file

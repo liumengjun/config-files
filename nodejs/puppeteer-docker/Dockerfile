@@ -6,8 +6,9 @@ FROM node:10.15.2-alpine
 RUN apk update && apk upgrade && \
     echo @v3.9 http://dl-cdn.alpinelinux.org/alpine/v3.9/community >> /etc/apk/repositories && \
     echo @v3.9 http://dl-cdn.alpinelinux.org/alpine/v3.9/main >> /etc/apk/repositories && \
-    # apk add --no-cache \
-    apk add chromium@v3.9 \
+    apk add --no-cache \
+      freetype@v3.9 \
+      chromium@v3.9 \
       harfbuzz@v3.9 \
       nss@v3.9
 
@@ -27,6 +28,9 @@ RUN addgroup -S pptruser && adduser -S -g pptruser pptruser \
     && mkdir -p /home/pptruser/Downloads \
     && chown -R pptruser:pptruser /home/pptruser
     # && chown -R pptruser:pptruser /app
+
+# Add cjk font
+COPY NotoSansCJK-Regular.ttc  /usr/share/fonts/TTF
 
 # Run everything after as non-privileged user.
 USER pptruser
