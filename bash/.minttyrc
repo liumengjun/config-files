@@ -1,0 +1,13 @@
+FontHeight=12
+Columns=121
+Rows=33
+Locale=zh_CN
+Charset=UTF-8
+Language=@
+Transparency=off
+OpaqueWhenFocused=no
+CursorBlinks=yes
+BackgroundColour=24,24,24
+ThemeFile=flat-ui
+CursorType=block
+AllowBlinking=yes
