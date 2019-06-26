@@ -27,10 +27,16 @@ export PATH="$JMETER_HOME/bin:$PATH"
 
 export NODE_HOME="/usr/local/opt/node"
 export NPM_HOME="$NODE_HOME/libexec/npm"
+## If you need to have node@10 first in your PATH run:
+#export PATH="/usr/local/opt/node@10/bin:$PATH"
+
+## For compilers to find node@10 you may need to set:
+# export LDFLAGS="-L/usr/local/opt/node@10/lib"
+# export CPPFLAGS="-I/usr/local/opt/node@10/include"
 
 export ANDROID_HOME="/Library/Android/sdk"
 export ANDROID_NDK_HOME="/Library/Android/sdk/ndk-bundle"
-PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/25.0.3:$PATH"
+PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/28.0.3:$ANDROID_HOME/tools:$PATH"
 PATH="$ANDROID_NDK_HOME:$PATH"
 
 #default GRADLE_USER_HOME="$HOME/.gradle"
@@ -90,3 +96,6 @@ if [ -f '/usr/local/google-cloud-sdk/completion.bash.inc' ]; then source '/usr/l
 
 export JETTY_HOME="/usr/local/opt/jetty/libexec"
 export CATALINA_HOME="/usr/local/opt/tomcat/libexec"
+
+
+export PATH="$PATH:/usr/local/development/flutter/bin"
