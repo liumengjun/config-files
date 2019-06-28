@@ -98,4 +98,7 @@ export JETTY_HOME="/usr/local/opt/jetty/libexec"
 export CATALINA_HOME="/usr/local/opt/tomcat/libexec"
 
 
-export PATH="$PATH:/usr/local/development/flutter/bin"
+export FLUTTER_HOME="/usr/local/development/flutter"
+export PATH="$PATH:$FLUTTER_HOME/bin"
+export DART_HOME="$FLUTTER_HOME/bin/cache/dart-sdk"
+export PATH="$PATH:$DART_HOME/bin"
