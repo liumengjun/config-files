@@ -2,6 +2,7 @@
 # use cmd `source` this file
 
 # polipo proxy  127.0.0.1:8123
-export http_proxy=127.0.0.1:8123
+export http_proxy=127.0.0.1:1087
 export https_proxy=$http_proxy
+export no_proxy=localhost,127.0.0.1,*.local,192.168.*.*,10.*.*.*
 
