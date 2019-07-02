@@ -1,3 +1,3 @@
-# eval echo cmds
+# eval `use_java8`
 echo 'JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home'
 echo 'PATH="$JAVA_HOME/bin:$PATH"'
