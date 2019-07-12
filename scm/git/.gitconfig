@@ -12,7 +12,7 @@
 	changes = log --name-status
 	cd = checkout
 	desc = describe
-	tags = tag -l
+	tags = tag -n2 -l
 	tagsref = show-ref --tags --abbrev -d
 [user]
 	email = mengjun_liu@126.com
