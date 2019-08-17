@@ -1,0 +1,1 @@
+/usr/local/bin/ssserver -c /usr/local/etc/shadowsocks.json -d start
