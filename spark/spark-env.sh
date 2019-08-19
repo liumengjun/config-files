@@ -65,6 +65,8 @@
 # - SPARK_NICENESS      The scheduling priority for daemons. (Default: 0)
 # - SPARK_NO_DAEMONIZE  Run the proposed command in the foreground. It will not output a PID file.
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+
 # export HADOOP_CONF_DIR="$HADOOP_HOME/etc/hadoop"
 export SPARK_LOCAL_IP='0.0.0.0'
 export SPARK_LOCAL_DIRS=/usr/local/var/spark
