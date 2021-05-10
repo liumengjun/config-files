@@ -10,7 +10,7 @@ fi
 
 export X11_PATH=/opt/X11
 
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home"
 PATH="$JAVA_HOME/bin:$PATH"
 export GROOVY_HOME="/usr/local/opt/groovy/libexec"
 PATH="$GROOVY_HOME/bin:$PATH"
@@ -27,12 +27,12 @@ export PATH="$JMETER_HOME/bin:$PATH"
 
 export NODE_HOME="/usr/local/opt/node"
 export NPM_HOME="$NODE_HOME/libexec/npm"
-## If you need to have node@10 first in your PATH run:
-#export PATH="/usr/local/opt/node@10/bin:$PATH"
+## If you need to have node@16 first in your PATH run:
+export PATH="/usr/local/opt/node@16/bin:$PATH"
 
-## For compilers to find node@10 you may need to set:
-# export LDFLAGS="-L/usr/local/opt/node@10/lib"
-# export CPPFLAGS="-I/usr/local/opt/node@10/include"
+## For compilers to find node@16 you may need to set:
+export LDFLAGS="-L/usr/local/opt/node@16/lib"
+export CPPFLAGS="-I/usr/local/opt/node@16/include"
 
 export ANDROID_HOME="/Library/Android/sdk"
 export ANDROID_NDK_HOME="/Library/Android/sdk/ndk-bundle"
@@ -80,6 +80,12 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 #export SPARK_HOME="/usr/local/spark"
 export SPARK_HOME="/usr/local/opt/apache-spark/libexec"
 export PATH="$PATH:$SPARK_HOME/bin"
+
+export FLINK_HOME="/usr/local/flink-1.11.0"
+export PATH="$PATH:$FLINK_HOME/bin"
+
+export KAFKA_HOME="/usr/local/kafka"
+export PATH="$PATH:$KAFKA_HOME/bin"
 
 export HADOOP_HOME="/usr/local/opt/hadoop/libexec"
 export PATH="$PATH:$HADOOP_HOME/bin"

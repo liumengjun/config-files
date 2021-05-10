@@ -31,7 +31,7 @@ JAVA_HTTP_FLAGS='-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8123 -Dhttp.nonProx
 # export BC_ENV_ARGS=".bcrc"
 
 # export ROOT_URL="http://`ifconfig en0 inet | tail -1 | cut -d ' ' -f2`:3000"
- 
+
 export MYSQL_PORT_3306_TCP_ADDR="127.0.0.1:3306"
 export MYSQL_ENV_MYSQL_ROOT_PASSWORD="lmj"
 
@@ -65,4 +65,29 @@ alias spark-notebook='PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS=n
 #alias google-chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome="open -a 'Google Chrome'"
 alias showjson='python -m json.tool'
+alias sshawsjpproxy='ssh -vND *:22888 web.aws.jp'
+#ssh-add -q ~/.ssh/id_rsa
+ssh-add -q
+# check by `ssh-add -E md5 -l`
+
+#export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSTALL_CLEANUP=1
+export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
+
+#export EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://localhost:8761/eureka/
+#export SPRING_CLOUD_CONSUL_PORT=localhost
+#export SPRING_SECURITY_USER_NAME=
+#export SPRING_SECURITY_USER_PASSWORD=
+
+export NODE_PATH="./node_modules:/usr/local/lib/node_modules"
+
+curl_add_ip(){
+    ENDPOINT="http://127.0.0.1:22999/api/add_whitelist_ip"
+    DATA="ip="$1
+    curl $ENDPOINT -X POST -d $DATA
+}
+alias lpm_whitelist_ip='curl_add_ip'
+
+source <(kubectl completion bash)
 

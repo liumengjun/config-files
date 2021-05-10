@@ -1,0 +1,3 @@
+#!/bin/bash
+cd ~/bin/cmak-3.0.0.5
+nohup bin/cmak &
