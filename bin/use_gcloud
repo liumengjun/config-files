@@ -1,0 +1,3 @@
+# source use_java11
+gcloud_home=/usr/local/google-cloud-sdk
+PATH="$gcloud_home/bin:$PATH"

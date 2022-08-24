@@ -1,8 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import string
 import random
 
-_chars = string.ascii_letters + string.digits
+_chars = string.ascii_letters + string.digits + '_-'
 
 def random_chars(num):
     return ''.join(random.choice(_chars) for i in range(num))
