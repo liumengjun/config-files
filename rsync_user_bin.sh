@@ -1,1 +1,1 @@
-rsync -av $HOME/bin ./
+rsync -av --exclude=in-lib $HOME/bin ./

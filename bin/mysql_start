@@ -1,1 +1,2 @@
-mysqld_safe --defaults-file=/usr/local/mysql/etc/my.cnf &
+#!/bin/bash
+sudo ${MYSQL_HOME}/support-files/mysql.server start
