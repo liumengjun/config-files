@@ -10,10 +10,10 @@ fi
 
 export X11_PATH=/opt/X11
 
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home"
-PATH="$JAVA_HOME/bin:$PATH"
-export GROOVY_HOME="/usr/local/opt/groovy/libexec"
-PATH="$GROOVY_HOME/bin:$PATH"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+#export GROOVY_HOME="/usr/local/opt/groovy/libexec"
+#export PATH="$GROOVY_HOME/bin:$PATH"
 
 # export DERBY_HOME="$JAVA_HOME/db"
 # PATH="$DERBY_HOME/bin:$PATH"
@@ -35,9 +35,9 @@ export LDFLAGS="-L/usr/local/opt/node@16/lib"
 export CPPFLAGS="-I/usr/local/opt/node@16/include"
 
 export ANDROID_HOME="/Library/Android/sdk"
-export ANDROID_NDK_HOME="/Library/Android/sdk/ndk-bundle"
-PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/28.0.3:$ANDROID_HOME/tools:$PATH"
-PATH="$ANDROID_NDK_HOME:$PATH"
+# export ANDROID_NDK_HOME="/Library/Android/sdk/ndk-bundle"
+export PATH="$ANDROID_HOME/build-tools/28.0.3:$ANDROID_HOME/cmdline-tools/20.0/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$PATH"
+# export PATH="$ANDROID_NDK_HOME:$PATH"
 
 #default GRADLE_USER_HOME="$HOME/.gradle"
 export GRADLE_HOME="$HOME/.gradle/wrapper/dists/gradle-latest"
@@ -65,6 +65,8 @@ PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # final export PATH
 export PATH
+
+
 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

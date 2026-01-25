@@ -4,29 +4,38 @@ fi
 
 
 # export PS1="\[\e[0;32m\][\t]\[\e[0;31m\]\u@\h\[\e[0;36m\]:\[\e[0;34m\]\W\[\e[0;37m\]$ \[\e[m\]"
-export PS1="\[\e[0;31m\]\u@\h\[\e[0;36m\]:\[\e[0;34m\]\W\[\e[0;37m\]$ \[\e[m\]"
+export PS1="\[\e[0;31m\]\u@\h\[\e[0;36m\]:\[\e[0;34m\]\w\[\e[0;37m\]$ \[\e[m\]"
 # export LC_TYPE="en_US.UTF-8"
 # export LC_ALL=C
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export LESSCHARSET=utf-8
 
+# 60*60*24*30=2592000
+export HOMEBREW_API_AUTO_UPDATE_SECS=2592000
+export HOMEBREW_NO_INSTALL_FROM_API=0
+
 export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSTALL_UPGRADE=1
+export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 export HOMEBREW_NO_INSTALL_CLEANUP=1
+export HOMEBREW_NO_AUTOREMOVE=1
+#export HOMEBREW_NO_ANALYTICS=1
 
 # polipo proxy  127.0.0.1:8123
-#export http_proxy=54.250.245.82:13128
+# privoxy @ 127.0.0.1:8118
+#export http_proxy=127.0.0.1:8124
 #export https_proxy=$http_proxy
 #export ftp_proxy=$http_proxy
 #export rsync_proxy=$http_proxy
 #export all_proxy=$http_proxy
-#export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+export no_proxy="localhost,127.0.0.1,::1,localaddress,.localdomain.com,10.0.0.0/8,172.0.0.0/11,192.168.0.0/16"
 
 #-Djava.net.useSystemProxies=true
 #-DsocksProxyHost=127.0.0.1
 #http://memorynotfound.com/configure-http-proxy-settings-java/
 #http://docs.oracle.com/javase/8/docs/technotes/guides/net/proxies.html
-JAVA_HTTP_FLAGS='-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8123 -Dhttp.nonProxyHosts="localhost|127.0.0.1"'
+#JAVA_HTTP_FLAGS='-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8123 -Dhttp.nonProxyHosts="localhost|127.0.0.1"'
 
 # export BC_ENV_ARGS=".bcrc"
 
@@ -51,7 +60,7 @@ alias mysql_server='sudo /usr/local/mysql/support-files/mysql.server'
 alias sublime='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 # alias jd-gui='/Applications/JD-GUI.app/Contents/MacOS/jd-gui'
 
-export MAVEN_OPTS='-Xmx4096m -XX:MaxPermSize=256m'
+# export MAVEN_OPTS='-Xmx4096m -XX:MaxPermSize=256m'
 # export GRADLE_OPTS='-Dorg.gradle.daemon=true'
 export M2_REPO="$HOME/.m2/repository"
 
@@ -70,10 +79,6 @@ alias sshawsjpproxy='ssh -vND *:22888 web.aws.jp'
 ssh-add -q
 # check by `ssh-add -E md5 -l`
 
-#export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_INSTALL_CLEANUP=1
-export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 
 #export EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://localhost:8761/eureka/
 #export SPRING_CLOUD_CONSUL_PORT=localhost

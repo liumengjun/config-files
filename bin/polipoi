@@ -1,4 +1,4 @@
 #!/bin/sh
 # https://www.irif.fr/~jch/software/polipo/
-polipo -c /usr/local/etc/polipo/config2
+polipo -c /usr/local/etc/polipo/config
 
